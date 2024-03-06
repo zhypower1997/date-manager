@@ -1,7 +1,7 @@
 /* eslint-disable no-plusplus */
 import React, { useEffect, useState } from "react";
-// import { Icon } from '@nibfe/dcui-pc'
 import { Input, Modal, message } from "antd";
+import { CloseCircleOutlined } from "@ant-design/icons";
 import { SketchPicker as ColorPicker } from "react-color";
 import locale from "@fullcalendar/core/locales/zh-cn";
 import FullCalendar, {
@@ -99,8 +99,7 @@ export default function IndexPage() {
             eventInfo.event.remove();
           }}
         >
-          {/* <Icon type="error-o" style={{ fontSize: 16, color: '#fff' }} /> */}
-          <div>X</div>
+          <CloseCircleOutlined style={{ fontSize: 16, color: "#fff" }} />
         </span>
       </div>
     );
